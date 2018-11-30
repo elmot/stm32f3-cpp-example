@@ -2,7 +2,7 @@
 // Created by elmot on 1.9.2018.
 //
 
-#include "../Inc/cppest.h"
+#include "../Inc/cppest.hpp"
 
 RED RED;
 GREEN GREEN;

@@ -40,8 +40,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "usb.h"
 
-#include "gpio.h"
-
 /* USER CODE BEGIN 0 */
 
 /* USER CODE END 0 */
@@ -62,7 +60,7 @@ void MX_USB_PCD_Init(void)
   hpcd_USB_FS.Init.battery_charging_enable = DISABLE;
   if (HAL_PCD_Init(&hpcd_USB_FS) != HAL_OK)
   {
-    _Error_Handler(__FILE__, __LINE__);
+    Error_Handler();
   }
 
 }
@@ -70,13 +68,14 @@ void MX_USB_PCD_Init(void)
 void HAL_PCD_MspInit(PCD_HandleTypeDef* pcdHandle)
 {
 
-  GPIO_InitTypeDef GPIO_InitStruct;
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
   if(pcdHandle->Instance==USB)
   {
   /* USER CODE BEGIN USB_MspInit 0 */
 
   /* USER CODE END USB_MspInit 0 */
   
+    __HAL_RCC_GPIOA_CLK_ENABLE();
     /**USB GPIO Configuration    
     PA11     ------> USB_DM
     PA12     ------> USB_DP 
@@ -122,13 +121,5 @@ void HAL_PCD_MspDeInit(PCD_HandleTypeDef* pcdHandle)
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
-
-/**
-  * @}
-  */
-
-/**
-  * @}
-  */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

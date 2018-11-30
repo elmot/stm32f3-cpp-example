@@ -7,7 +7,6 @@
 
 extern "C" {
 #include "main.h"
-#include "stm32f3xx_hal.h"
 #include "i2c.h"
 #include "spi.h"
 #include "usb.h"

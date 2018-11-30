@@ -44,7 +44,6 @@
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "stm32f3xx_hal.h"
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
@@ -56,8 +55,6 @@ extern PCD_HandleTypeDef hpcd_USB_FS;
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
-
-extern void _Error_Handler(char *, int);
 
 void MX_USB_PCD_Init(void);
 
