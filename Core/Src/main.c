@@ -77,6 +77,8 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
 void doSomething(void);
+extern void initialise_monitor_handles(void); /* prototype */
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -91,7 +93,7 @@ void doSomething(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+  initialise_monitor_handles(); /* initialize handles */
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -121,6 +123,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  printf("blah\n\r");
     doSomething();
     /* USER CODE END WHILE */
 
