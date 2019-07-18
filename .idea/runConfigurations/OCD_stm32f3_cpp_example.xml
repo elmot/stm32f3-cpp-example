@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="OCD stm32f3-cpp-example" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" PASS_PARENT_ENVS_2="true" PROJECT_NAME="stm32f3-cpp-example" TARGET_NAME="stm32f3-cpp-example.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="stm32f3-cpp-example" RUN_TARGET_NAME="stm32f3-cpp-example.elf">
+    <openocd gdb-port="3333" telnet-port="4444" board-config="board/stm32f3discovery.cfg" reset-type="INIT" download-type="ALWAYS" />
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
