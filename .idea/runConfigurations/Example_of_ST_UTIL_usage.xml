@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Example of ST-UTIL usage" type="com.jetbrains.cidr.embedded.customgdbserver.type" factoryName="com.jetbrains.cidr.embedded.customgdbserver.factory" PASS_PARENT_ENVS_2="true" PROJECT_NAME="stm32f3-cpp-example" TARGET_NAME="stm32f3-cpp-example.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="stm32f3-cpp-example" RUN_TARGET_NAME="stm32f3-cpp-example.elf">
+    <custom-gdb-server version="1" gdb-connect="tcp:localhost:4242" executable="C:\tools\stlink-opensource\stlink-1.3.0-win64\bin\st-util.exe" warmup-ms="0" download-type="UPDATED_ONLY" reset-cmd="monitor reset" />
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
